@@ -11,6 +11,8 @@ mkdir -p $HOME/LIVE_BOOT
 echo Install Debian
 debootstrap --arch=amd64 --variant=minbase buster $HOME/LIVE_BOOT/chroot http://ftp.us.debian.org/debian/
 
+
+# 拷贝文件
 echo Copy supporting documents into the chroot
 cp -v /supportFiles/installChroot.sh $HOME/LIVE_BOOT/chroot/installChroot.sh
 cp -v /supportFiles/istoreos/menu $HOME/LIVE_BOOT/chroot/usr/bin/menu
